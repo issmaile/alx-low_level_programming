@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -Werror -pedantic -std=gnu89 -E "$CFILE" -o c
+gcc -Wall -Werror -pedantic -std=gnu89 -E "$CFILE" > c
