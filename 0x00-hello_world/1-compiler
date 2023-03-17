@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c -o $("echo | cut -d. -f1"\).o
+gcc -c -o .o
