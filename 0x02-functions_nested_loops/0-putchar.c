@@ -1,11 +1,12 @@
 #include "main.h"
 
-
 /**
- * Enty: Main
+ * main - Entry point
  *
- * Returns: 0 (Success)
- */
+ * Description: prints _putchar using putchar prototype
+ *
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
