@@ -5,7 +5,7 @@
  * @argc: command arguments count
  * @argv: arguments vector
  *
- * Returns: Always 0 (Success)
+ * Return: Always 0 (Success)
  *
  */
 
