@@ -15,15 +15,12 @@ int main(int argc, char *argv[])
 	if (argc == 3)
 	{
 		printf("%d\n", argv[1] * arv[2]);
-
 		ret = 0;
 	}
 	else
 	{
 		printf("Error");
-		
 		ret = 1;
 	}
-	
-	return ret;
+	return (ret);
 }
