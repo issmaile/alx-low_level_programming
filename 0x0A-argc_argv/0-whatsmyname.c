@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+/**
+ * main - prints the program name
+ * @argc: command arguments count
+ * @argv: arguments vector
+ *
+ * Returns: Always 0 (Success)
+ *
+ */
+
+int main(int argc, char* argv[])
+{
+	printf("%s\n", argv[0]);
+	return (0);
+}
