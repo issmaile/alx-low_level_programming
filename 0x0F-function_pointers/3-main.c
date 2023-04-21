@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int a;
-	char* op;
+	char *op;
 	int b;
 	int (*operation)(int, int);
 
