@@ -39,20 +39,15 @@ char **strtow(char *str)
 
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
-
 	len = 0;
 	while (*(str + len))
 		len++;
-
 	words = count_word(str);
-
 	if (words == 0)
 		return (NULL);
-
 	matrix = (char **) malloc(sizeof(char *) * (words + 1));
 	if (matrix == NULL)
 		return (NULL);
-
 	for (i = 0; i < len; i++)
 	{
 		if (str[i] != ' ')
@@ -61,21 +56,16 @@ char **strtow(char *str)
 			while (str[i] != ' ' && str[i] != '\0')
 				i++;
 			end = i;
-
 			tmp = (char *) malloc(sizeof(char) * (end - start + 1));
 			if (tmp == NULL)
 				return (NULL);
-
 			for (j = 0; start < end; j++, start++)
 				tmp[j] = str[start];
 			tmp[j] = '\0';
-
 			matrix[k++] = tmp;
 		}
 	}
-
 	matrix[k] = NULL;
-
 	return (matrix);
 }
 
