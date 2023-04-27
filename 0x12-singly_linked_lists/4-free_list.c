@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * free_list - frees list
@@ -10,10 +10,12 @@ void free_list(list_t *head)
 {
 	list_t *current;
 
-	while ((current = head) != NULL)
+	current = head;
+	while (head != NULL)
 	{
 		head = head->next;
 		free(current->str);
 		free(current);
+		current = head;
 	}
 }
