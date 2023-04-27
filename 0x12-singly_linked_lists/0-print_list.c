@@ -8,20 +8,21 @@
  */
 size_t print_list(const list_t *h)
 {
-	int count = 1;
-	list_t *current_node = h;
+	size_t count = 0;
 
-	if (!h)
-		return (0);
-	if (!h->str)
+	while (h != NULL)
 	{
-		printf("[0] (nil)\n");
-		return (0);
-	}
-	while (current_node->next)
-	{
+		if (h->str == NULL)
+		{
+			printf("[0] (nil)");
+		}
+		else
+		{
+			printf("[%d] %s", h->len, h->str);
+		}
+
 		count++;
-		current_node = current_node->next;
+		h = h->next;
 	}
 
 	return (count);
