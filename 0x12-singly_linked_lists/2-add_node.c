@@ -3,6 +3,7 @@
 /**
  * add_node - adds a node at the beginning of list_t linked list
  * @head: list head
+ * @str: str to dupe
  *
  * Return: the address of the new element, or NULL if failed
  */
@@ -25,5 +26,5 @@ list_t *add_node(list_t **head, const char *str)
 	new_node->next = *head;
 	*head = new_node;
 
-	return (&new_node);
+	return (new_node);
 }
