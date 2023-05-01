@@ -5,7 +5,7 @@
  * @head: pointer to pointer to head
  * @n: n element
  *
- * Reeturn: address of the new elem - failed: NULL
+ * Return: address of the new elem - failed: NULL
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
@@ -18,5 +18,5 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	new_node->next = *head;
 	*head = new_node;
 
-	return(*head);
+	return (*head);
 }
