@@ -14,13 +14,13 @@ int get_bit(unsigned long int n, unsigned int index)
 	while (n)
 	{
 		if (index == cur_i)
-		{
+        {
             return (n % 2 ? 1 : 0);
-		}
+        }
 
 		n /= 2;
 		cur_i++;
-	}
+    }
 
     return (cur_i < index && index < 63 ? 0 : -1);
 }

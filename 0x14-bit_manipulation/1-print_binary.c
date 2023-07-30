@@ -1,35 +1,34 @@
 #include "main.h"
 
 /**
-  * _divide - devides unit
-  * @void _divid(unsigned long int number)
-: uint
+  * _divid - devides unit
+  * @n: n to divid
   *
   * Return: devided iont
   */
-void _divid(unsigned long int number)
+void _divid(unsigned long int n)
 {
-	if (number < 1)
+	if (n < 1)
 		return;
 
-	_divid(number >> 1);
-
-    _putchar(number & 1 ? '1' : '0');
+	_divid(n >> 1);
+    
+    _putchar(n & 1 ? '1' : '0');
 }
 
 /**
   * print_binary - prints number as binary
-  * @number: the decimal numer
+  * @n: the decimal numer
   *
   * Return: none
   */
-void print_binary(unsigned long int number)
+void print_binary(unsigned long int n)
 {
-	if (number == 0)
+	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
 
-	_divid(number);
+	_divid(n);
 }
