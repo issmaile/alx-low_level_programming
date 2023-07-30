@@ -18,7 +18,7 @@ int _strlen(const char *s)
 
 /**
   * binary_to_uint - converts binary to uint
-  * @n: binary string to onvert
+  * @b: binary string to onvert
   *
   * Return: converted number
   */
