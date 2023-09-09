@@ -50,7 +50,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	id = key_index((const unsigned char *)key, ht->size);
 	tmp = ht->array[id];
-	while(tmp != NULL)
+	while (tmp != NULL)
 	{
 		if (strcmp(tmp->key, key) == 0)
 		{
